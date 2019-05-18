@@ -16,7 +16,7 @@ public class ProjetPoo {
     public static Shop shop = new Shop();
     
     public static Provider microsoft = new Provider("microsoft", 5, "pc Asus", (float) 800.99);
-    public static Provider appel = new Provider("appel", 8, "iphone", (float) 499.98);
+    public static Provider apple = new Provider("apple", 8, "iphone", (float) 499.98);
     public static Provider mrPrope = new Provider("Mr Prope", 8, "Mr Prope", (float) 20.50);
 
     public static Client leib = new Client("Adrien", "Leib");
@@ -25,10 +25,11 @@ public class ProjetPoo {
     public static void main(String[] args) {
 
         buy(microsoft, 4);
-        buy(appel, 8);
+        buy(apple, 8);
+        buy(microsoft, 4);
         buy(mrPrope, 4);
 
-        appel.setStock(12);
+        apple.setStock(12);
 
         shop.show();
 
@@ -36,7 +37,7 @@ public class ProjetPoo {
         System.out.println("Mise à jour des produit du magasin");
         System.out.println("\n");
 
-        buy(appel, 4);
+        buy(apple, 4);
         shop.show();
 
         System.out.println("\n");
